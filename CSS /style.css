@@ -1,0 +1,127 @@
+body {
+    width: 100%;
+    box-sizing: border-box;
+}
+/*HEADER*/
+.navigation {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(180deg, rgba(115, 131, 211, 1), rgba(115, 131, 211, 0));
+}
+.logo{
+    width: 40%;
+    padding: 1%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+nav {
+    width:60%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+li {
+    float: left;
+    display: inline-flex ;
+    padding: 0;
+    word-spacing: 65 px;
+    margin: 5%;
+}
+/*HERO*/
+#hero {
+    margin: auto;
+    vertical-align: center;
+}
+.heroimg {
+    padding: 2%;
+    width: 30%;
+    display: inline-block;
+    vertical-align: center;
+}
+.content {
+    padding: 5% 2%;
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Otomanopee One', sans-serif;
+}
+/*WORK SECTION*/
+h1 {
+text-align: center;
+}
+.workGrid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas:
+    "mockupOne boxOne"
+    "boxTwo mockupTwo"
+    "mockupThree boxThree";
+}
+#boxOne{
+    grid-area: boxOne;
+    width: 50%;
+}
+.mockupOne {
+    grid-area: mockupOne;
+    width: 50%
+}
+#boxTwo{
+    grid-area: boxTwo;
+    width: 50%;
+}
+.mockupTwo {
+    grid-area: mockupTwo;
+    width: 50%;
+}     
+#boxThree{
+    grid-area: boxThree;
+    width: 50%;
+}
+.mockupThree {
+    grid-area: mockupThree;
+    width: 50%;
+}  
+/*SKILLS SECTION*/
+.flexContainer {
+    display: flex;
+    width: auto;
+}
+#skillSet {
+    padding-right: 5%;
+    padding-left: 5%
+}
+
+#infoOne{
+    padding-right: 5%
+}
+
+#infoTwo{
+    margin-right: 5%;
+}
+
+/*FOOTER*/
+footer {
+background-image: linear-gradient(180deg, rgba(115, 131, 211, 1), rgba(115, 131, 211, 0));
+width: 100%;
+}
+@media only screen and (max-width:600px){
+.flexContainer {
+    display:columns;
+    width:100%;
+}
+.workGrid{
+grid-template-rows: 300px 300px 300px;
+grid-template-columns: 1fr;
+grid-template-areas: 
+"boxOne"
+"boxTwo"
+"boxThree";
+}
+  }
