@@ -8,13 +8,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="preloader">
+            <img src="Images/loading.png">
+          </div>
     <header class="navigation">
         <div class="mystuff">
             <img class="logo" src="Images/logo1.png" alt="logo of site" im>
         </div>
         <nav class="mystuff">
             <ul>
-                <li>UX/UI Projects</li>
+               <li>UX/UI Projects</li>
                 <li>About Me</li>
                 <li>My Skills</li>
                 <li>Speech Therapy</li>
@@ -30,7 +33,7 @@
                 I am a Speech Language Pathologist and a UI/UX designer and researcher. 
                 I believe all individuals should have equal access to technology.
             </p>
-            <button>Resume</button>   
+            <button style="background-color:#5372ff; color:white";> Resume</button>   
         </div>
         <img src="Images/photo1.png" class="heroimg" alt="photo of a white woman with brown hair">
     </section>
@@ -41,19 +44,19 @@
             <div id=boxOne>
                 <h2>Helotes Humane Society</h2>
                 <p>Group Project: Desktop and Mobile Redesign of non-profit agency to encourage pet adopts, foster, and donations.</p>
-                <button>View Project</button>
+                <button style="background-color:#5372ff; color:white";>View Project</button>
             </div>
             <img class="mockupOne" src="Images/HHS final  1.png" alt="photo of HHS homepage">
             <div id=boxTwo>
                 <h2> InstaList</h2>
                 <p>Group Project: A mobile application that improves the grocery shopping experience by providing cost comparison, location, and list sharing.</p>
-                <button>View Project</button>
+                <button style="background-color:#5372ff; color:white";>View Project</button>
             </div> 
             <img class="mockupTwo" src= "Images/Instalist home page  1.png" alt= "photo of InstaList homepage">
             <div id=boxThree>
                 <h2> Travel Safe</h2>
                 <p>Individual Project: A mobile application that assists travelers in finding travel locations with COVID-19 safety .</p>
-                <button>View Project</button>
+                <button style="background-color:#5372ff; color:white";>View Project</button>
             </div>  
             <img class="mockupThree" src= "Images/travel safe final photo  1.png" alt= "photo of InstaList homepage">     
         </div>
@@ -84,6 +87,8 @@
             </div>
         </div>
     </section>
+    <!--My UX Skills section coded using CSS flex-->
+    <section>
     <footer>
         <ul>
             <li>Instagram</li>
@@ -91,8 +96,13 @@
             <li>Email Me</li>
             <li>Resume</li>
         </ul>
-        <p> Return to top</p>
+        <button onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Back to Top ↑</button> 
         <p>Copyright2021</p>
     </footer>
+</section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/index.js"></script>
     </body>
 </html>
+
