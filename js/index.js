@@ -1,12 +1,5 @@
 console.log("Your index.js file is loaded correctly!");
 
-// preloader//
-
-$(window).on('load', function () {
-    (function ($) {
-    preloaderFadeOutInit();
-    });
-    });
 
 //scroll to top//
  window.scrollTo({top: 0, behavior: "smooth"});
