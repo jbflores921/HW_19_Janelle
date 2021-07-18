@@ -30,7 +30,7 @@ li {
     float: left;
     display: inline-flex ;
     padding: 0;
-    word-spacing: 65px;
+    word-spacing: 2 px;
     margin: 1%;
 }
 li a {
@@ -64,6 +64,7 @@ li a {
     display: inline-block;
     font-family: 'Otomanopee One', sans-serif;
 }
+
 /*WORK SECTION*/
 h1 {
 text-align: center;
@@ -139,6 +140,7 @@ grid-template-areas:
 "boxThree";
 }
 
+/***darkMode****/
   body {
     padding: 25px;
     background-color: white;
@@ -150,5 +152,6 @@ grid-template-areas:
     background-color: black;
     color: white;
   }
+
 
   }
