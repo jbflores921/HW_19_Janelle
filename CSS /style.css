@@ -30,7 +30,7 @@ li {
     float: left;
     display: inline-flex ;
     padding: 0;
-    word-spacing: 2 px;
+    word-spacing: 2px;
     margin: 1%;
 }
 li a {
@@ -68,7 +68,13 @@ li a {
 /*WORK SECTION*/
 h1 {
 text-align: center;
+text-decoration: underline;
 }
+button{
+    border-radius: 16px;
+    font-size: 20px;
+}
+
 .workGrid{
     display:grid;
     grid-template-columns: 50% 50%;
