@@ -9,7 +9,9 @@ console.log("Your index.js file is loaded correctly!");
     var element = document.body;
     element.classList.toggle("dark-mode");
   }
-     
-
-
+$("button").hover(function(){
+  $(this).css("cursor","pointer");
+},function(){
+  $(this).css("cursor","auto");
+});
 
